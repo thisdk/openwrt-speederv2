@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2017 Yu Wang <wangyucn@gmail.com>
+# Copyright (c) 2020 Yu Wang <wangyucn@gmail.com>
 #
 # This is free software, licensed under the MIT.
 # See /LICENSE for more information.
@@ -8,18 +8,18 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=udpspeederv2
-PKG_VERSION:=20190121.0.conf
+PKG_VERSION:=20200714.0
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/zhfreal/UDPspeeder.git
-PKG_SOURCE_VERSION:=0fe8195e474014c29b66aedd096c0e1eefd77ed3
+PKG_SOURCE_URL:=https://github.com/wangyu-/UDPspeeder.git
+PKG_SOURCE_VERSION:=7d349251d058beb0c2a5accb00c5b844bfd6a108
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
 
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE
-PKG_MAINTAINER:=zhfreal
+PKG_MAINTAINER:=wangyu-
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 
@@ -31,7 +31,7 @@ define Package/$(PKG_NAME)
 	SECTION:=net
 	CATEGORY:=Network
 	TITLE:=UDP Network Speed-Up Tool
-	URL:=https://github.com/zhfreal/UDPspeeder
+	URL:=https://github.com/wangyu-/UDPspeeder
 	DEPENDS:= +libstdcpp +librt
 endef
 
